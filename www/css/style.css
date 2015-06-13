@@ -1,0 +1,61 @@
+/* Empty. Add your own CSS if you like */
+.myTabStyle {
+    	background-color:#50AE55 !important;
+    	
+    }
+
+.myTabStyle:hover {
+    	background-color:#50AE55 !important;
+    }
+
+    .searchStyle {
+    	background-color:#4d97af !important;
+    }
+
+.searchStyle:hover {
+    	background-color:#4d97af !important;
+    }
+
+    .nearbyStyle {
+    	background-color:#AD4E59 !important;
+    }
+
+.nearbyStyle:hover {
+    	background-color:#AD4E59 !important;
+    }
+
+    .settingsStyle {
+    	background-color:#D6D491 !important;
+    }
+
+.settingsStyle:hover {
+    	background-color:#D6D491 !important;
+    }
+
+     .hotlineStyle {
+      background-color:#efefe7 !important;
+    }
+
+.hotlineStyle:hover {
+      background-color:#efefe7 !important;
+    }
+
+
+   .nav_gnrl:[data-title]{
+	background-color:#49af50 !important;
+}
+
+ul.rating li {
+  display: inline;
+  border: 0px;
+  background: none;
+  padding: 5px 10px;
+}
+ul.rating li i {
+  font-size: 20px;
+}
+
+.angular-google-map {
+            display: block;
+        }
+

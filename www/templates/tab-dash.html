@@ -1,0 +1,116 @@
+<ion-view view-title="Iktashif">
+  <ion-content class="padding">
+
+
+  
+  
+    <div class="list card">
+
+       
+    </div>
+
+    <ion-slide-box>
+    <ion-slide>
+        <img style="width: 100%" src="img/BUS.png">
+    </ion-slide>
+    <ion-slide>
+        <img style="width: 100%" src="img/METRO.png">
+    </ion-slide>
+    <ion-slide>
+        <img style="width: 100%" src="img/TRAM.png">
+    </ion-slide>
+</ion-slide-box>
+<div class="card">
+<ion-slide-box >
+    <ion-slide >
+        <a class="item item-avatar">
+             <img src="img/rest.png">
+              <h2>{{Result[0].name}}</h2>
+               <p>{{Result[0].vicinity}}</p>
+               <rating ng-model="rate" max="max"></rating><br>
+               
+               
+                </a>
+
+
+    </ion-slide>
+    <ion-slide>
+        <a class="item item-avatar">
+             <img src="img/rest.png">
+              <h2>{{Result[1].name}}</h2>
+               <p>{{Result[1].vicinity}}</p>
+               <rating ng-model="rate1" max="max"></rating><br>
+                </a>
+    </ion-slide>
+    <ion-slide>
+        <a class="item item-avatar">
+             <img src="img/rest.png">
+              <h2>{{Result[2].name}}</h2>
+               <p>{{Result[2].vicinity}}</p>
+
+               <rating ng-model="rate2" max="max"></rating><br>
+                </a>
+    </ion-slide>
+    <ion-slide >
+        <a class="item item-avatar">
+             <img src="img/rest.png">
+              <h2>{{Result[3].name}}</h2>
+               <p>{{Result[3].vicinity}}</p>
+               <rating ng-model="rate3" max="max"></rating><br>
+                </a>
+    </ion-slide>
+    <ion-slide>
+        <a class="item item-avatar">
+             <img src="img/rest.png">
+              <h2>{{Result[4].name}}</h2>
+               <p>{{Result[4].vicinity}}</p>
+               <rating ng-model="rate4" max="max"></rating><br>
+                </a>
+    </ion-slide>
+    
+</ion-slide-box>
+</div>
+
+
+
+  
+
+  <div class="card" ng-controller="ChatsCtrl" >
+    <form>
+            <div class="row"  >
+                <div class="row" id="map_canvas" ui-map="model.myMap" 
+             ui-options="mapOptions"  draggable="true"  ui-map-marker="myMarkers[$index]" ui-event="{'map-click': 'addMarker($event, $params)' }">
+                
+                <div ng-repeat="marker in myMarkers" ui-map-marker="myMarkers[$index]">
+                </div>
+            </div>
+            <div class="row" ng-show="showResult()">
+               Latitude: {{lat}} <br />
+               Longitude: {{lng}} <br />
+               Accuracy: {{accuracy}}
+            
+            </div>
+            <div class="row" ng-show="!showResult()">
+                Error : {{error}}
+                Error Code: {{error.code}}
+            </div>    
+            </div>   
+        </form>
+  </div>
+
+  <div class="card" align="center">
+    <br /> <button class="button button-fab button-balanced icon ion-leaf"></button> 
+    <button class="button button-fab button-assertive icon ion-leaf"></button> <button class="button button-fab ink-dark button-calm icon ion-tshirt"></button> <button class="button button-fab button-dark icon ion-heart" data-ink-color="#ff0000" data-ink-opacity=".8"></button><br /><br /> <strong>
+  </div>
+
+
+
+
+
+
+
+
+    
+    
+  </ion-content>
+</ion-view>

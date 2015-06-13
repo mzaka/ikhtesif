@@ -1,0 +1,17 @@
+<ion-view title="Restuarant">
+  <ion-content class="padding" >
+
+ <div class="list" ng-repeat="rests in Resultrest">
+ <a class="item item-avatar"> 
+ <img src="{{rests.icon}}">
+ <h2>{{rests.name}}</h2> 
+ <p>{{rests.vicinity}}</p>
+ <i class="ion-map" ui-sref="app.location-map"> View Map </i>
+ </a>
+ 
+  </div>
+
+                
+  
+  </ion-content>
+</ion-view>

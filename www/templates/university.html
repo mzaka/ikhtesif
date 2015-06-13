@@ -1,0 +1,17 @@
+<ion-view title="Universities">
+  <ion-content class="padding" >
+
+ <div class="list" ng-repeat="university in Resultuni">
+ <a class="item item-avatar" href="#/tab/chats/42"> 
+ <img src="{{university.icon}}">
+ <h2>{{university.name}}</h2> 
+ <p>{{university.vicinity}}</p>
+ <i class="ion-map" ui-sref="app.location-map"> View Map </i>
+ </a>
+ 
+  </div>
+
+                
+  
+  </ion-content>
+</ion-view>

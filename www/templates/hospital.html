@@ -1,0 +1,17 @@
+<ion-view title="Hospitals">
+  <ion-content class="padding" >
+
+ <div class="list" ng-repeat="hospitals in Result">
+ <a class="item item-avatar" href="#/tab/chats/42"> 
+ <img src="{{hospitals.icon}}">
+ <h2>{{hospitals.name}}</h2> 
+ <p>{{hospitals.vicinity}}</p>
+ <i class="ion-map" ui-sref="app.location-map"> View Map </i>
+ </a>
+ 
+  </div>
+
+                
+  
+  </ion-content>
+</ion-view>

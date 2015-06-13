@@ -1,0 +1,329 @@
+<ion-view title="Fare Calculator" >
+  <ion-content class="has-header">
+  	<div ng-controller="ExampleController">
+  	
+
+<!--<section class="ac-container">
+  <div>
+    <input id="ac-1" name="accordion-1" type="radio" />
+    <label for="ac-1">Tram Fare Cal</label>
+    <article class="ac-small">
+      <form  class="simple-form">
+
+        Source Station:<select ng-model="user.souStation">
+  <option value="JUMEIRA BEACH RESIDENCE1">JUMEIRA BEACH RESIDENCE1</option>
+  <option value="GOLD">Gold</option>
+</select>
+<br>
+
+  Destination Station:<select ng-model="user.desStation">
+  <option value="KNOWLEDGE VILLAGE">KNOWLEDGE VILLAGE</option>
+  <option value="GOLD">Gold</option>
+</select>
+<br>
+
+    Card Type:<select ng-model="user.cardType">
+  <option value="SILVER">Silver</option>
+  <option value="GOLD">Gold</option>
+  
+</select>
+<br>
+<br>
+
+    <!--Name: <input type="text" ng-model="user.inOutParam" /><br />
+    E-mail: <input type="email" ng-model="user.inOutParam" /><br />
+    Gender: <input type="radio" ng-model="user.gender" value="male" />male
+    <input type="radio" ng-model="user.gender" value="female" />female<br />-->
+   
+   <!-- <button type="submit" ng-click="tram(user)" value="Save" >Calculate Fare </button>
+  </form>
+  <!--<pre>form = {{user | json}}</pre>
+  <pre>master = {{master | json}}</pre>-->
+  
+
+     <!-- <div  ng-repeat="league in tramFare track by $index"  >
+           Total Fare for this Tram Journey is : {{league.Fare}} Dhs
+            </div> 
+                </article>
+  
+        
+    
+  </div>
+  <br>
+  <div>
+    <input id="ac-2" name="accordion-1" type="radio"  />
+    <label for="ac-2">Bus Fare Calculator</label>
+    <article class="ac-medium">
+     <form  class="simple-form">
+
+        Source Station:<select ng-model="user.souStation">
+  <option value="THE DUBAI MALL">THE DUBAI MALL</option>
+  
+</select>
+<br>
+
+  Destination Station:<select ng-model="user.desStation">
+  <option value="DNATA 2">DNATA 2</option>
+  
+</select>
+<br>
+
+    Card Type:<select ng-model="user.cardType">
+  <option value="SILVER">Silver</option>
+  <option value="GOLD">Gold</option>
+  
+</select>
+<br>
+<br>
+
+    <!--Name: <input type="text" ng-model="user.inOutParam" /><br />
+    E-mail: <input type="email" ng-model="user.inOutParam" /><br />
+    Gender: <input type="radio" ng-model="user.gender" value="male" />male
+    <input type="radio" ng-model="user.gender" value="female" />female<br />-->
+   
+   <!-- <button type="submit" ng-click="bus(user)" value="Save" >Save </button>
+  </form>
+  <!--<pre>form = {{user | json}}</pre>
+  <pre>master = {{master | json}}</pre>-->
+  
+     <!--<div  ng-repeat="league in busFare track by $index"  >
+           Total Fare for this Journey is : {{league.Fare}} Dhs
+            </div> 
+    </article>
+    
+      
+        
+    
+  </div>
+  <br>
+  <div>
+    <input id="ac-3" name="accordion-1" type="radio"  />
+    <label for="ac-3">Metro Fare Calculator</label>
+    <article class="ac-medium">
+     <form  class="simple-form">
+
+        Source Station:<select ng-model="user.souStation">
+  <option value="AIRPORT TERMINAL 1">AIRPORT TERMINAL 1</option>
+  
+</select>
+<br>
+
+  Destination Station:<select ng-model="user.desStation">
+  <option value="IBN BATTUTA">IBN BATTUTA</option>
+  
+</select>
+<br>
+
+    Card Type:<select ng-model="user.cardType">
+  <option value="SILVER">Silver</option>
+  <option value="GOLD">Gold</option>
+  
+</select>
+<br>
+<br>
+
+    <!--Name: <input type="text" ng-model="user.inOutParam" /><br />
+    E-mail: <input type="email" ng-model="user.inOutParam" /><br />
+    Gender: <input type="radio" ng-model="user.gender" value="male" />male
+    <input type="radio" ng-model="user.gender" value="female" />female<br />-->
+   
+   <!-- <button type="submit" ng-click="metro(user)" value="Save" >Save </button>
+  </form>
+  <!--<pre>form = {{user | json}}</pre>
+  <pre>master = {{master | json}}</pre>-->
+  
+    <!-- <div  ng-repeat="league in metroFare track by $index"  >
+           Total Fare for this Journey is : {{league.Fare}} Dhs
+            </div> 
+    </article>
+    
+      
+        
+    
+  </div>
+</section>-->
+<div class="list animate-fade-slide-in"> 
+          <!--<label class="item item-input item-floating-label"> 
+            <span class="input-label">First Name</span> 
+            <input type="text" placeholder="First Name"> 
+          </label> <label class="item item-input item-floating-label">
+           <span class="input-label">Last Name</span>
+            <input type="text" placeholder="Last Name"> </label> <br /> 
+
+            <div class="item item-checkbox"> <label class="checkbox"> <input type="checkbox"> </label> I read the terms & conditions </div> 
+
+            <div class="item item-checkbox"> <label class="checkbox">
+             <input type="checkbox"> </label> Haha, you liar. There are no T&C's </div> 
+
+             <br /> <label class="item item-radio"> <input type="radio" name="group">
+
+              <div class="item-content"> Tap Me </div> 
+
+              <i class="radio-icon ion-checkmark"></i> </label> <label class="item item-radio"> <input type="radio" name="group">
+
+               <div class="item-content"> Or Tap Me </div> <i class="radio-icon ion-checkmark"></i> </label> <label class="item item-radio"> <input type="radio" name="group"> <div class="item-content"> Or Tap Me </div> 
+
+              <i class="radio-icon ion-checkmark"></i> </label> <div class="item range range-positive"> <i class="icon ion-ios-sunny-outline"></i> <input type="range" name="volume" min="0" max="100" value="33"> <i class="icon ion-ios-sunny"></i> </div>-->
+              <div class="list card stable-bg" ng-init="metroStations()">
+                <h3 align="center"> Metro Fare Calculator </h3>
+               <label class="item item-input item-select">
+
+               <div class="input-label"> Source Station </div> <select 
+               ng-model="metroNames" class="form-control" ng-options="obj.properties.STATION_NAME_EN for obj in metroSt track by obj.properties.STATION_NAME_EN  "></select> 
+             </label>
+
+               <label class="item item-input item-select">
+
+               <div class="input-label"> Destination </div> <select 
+               ng-model="metrodest" class="form-control" ng-options="obj.properties.STATION_NAME_EN for obj in metroSt track by obj.properties.STATION_NAME_EN  "></select>  </label>
+
+               <label class="item item-input item-select">
+
+               <div class="input-label"> Card Type </div>
+               <select ng-model="user.cardType">
+                <option value="SILVER">Silver</option>
+                <option value="GOLD">Gold</option>
+  
+                </select> </label>
+
+                <a class="item item-avatar">
+                    <img src="http://travel.fyicenter.com/Currency/AED_5_Five_Dirham_Bill_Front.jpg">
+                    <h2 ng-repeat="league in metroFare track by $index">{{league.Fare}} AED</h2>
+                    <p ng-repeat="league in metroFare track by $index">{{league.message.text}} </p>
+                    
+                </a>
+
+                <button class="button button-block button-calm ink" data-ink-color="#9DEAFF" data-ink-opacity="1" ng-click="metro(user)" value="Save"> Submit </button> 
+              </div>
+
+              
+
+
+
+
+
+<div>
+ 
+                
+         <div class="list animate-fade-slide-in"> 
+          <!--<label class="item item-input item-floating-label"> 
+            <span class="input-label">First Name</span> 
+            <input type="text" placeholder="First Name"> 
+          </label> <label class="item item-input item-floating-label">
+           <span class="input-label">Last Name</span>
+            <input type="text" placeholder="Last Name"> </label> <br /> 
+
+            <div class="item item-checkbox"> <label class="checkbox"> <input type="checkbox"> </label> I read the terms & conditions </div> 
+
+            <div class="item item-checkbox"> <label class="checkbox">
+             <input type="checkbox"> </label> Haha, you liar. There are no T&C's </div> 
+
+             <br /> <label class="item item-radio"> <input type="radio" name="group">
+
+              <div class="item-content"> Tap Me </div> 
+
+              <i class="radio-icon ion-checkmark"></i> </label> <label class="item item-radio"> <input type="radio" name="group">
+
+               <div class="item-content"> Or Tap Me </div> <i class="radio-icon ion-checkmark"></i> </label> <label class="item item-radio"> <input type="radio" name="group"> <div class="item-content"> Or Tap Me </div> 
+
+              <i class="radio-icon ion-checkmark"></i> </label> <div class="item range range-positive"> <i class="icon ion-ios-sunny-outline"></i> <input type="range" name="volume" min="0" max="100" value="33"> <i class="icon ion-ios-sunny"></i> </div>-->
+              <div class="list card stable-bg" ng-init="tramStations()">
+                <h3 align="center"> Tram Fare Calculator </h3>
+               <label class="item item-input item-select">
+
+               <div class="input-label"> Source Station </div> <select 
+               ng-model="myNames" class="form-control" ng-options="obj.properties.STATION_NAME_EN for obj in totalst track by obj.properties.STATION_NAME_EN  "></select> 
+             </label>
+
+               <label class="item item-input item-select">
+
+               <div class="input-label"> Destination </div> <select 
+               ng-model="destst" class="form-control" ng-options="obj.properties.STATION_NAME_EN for obj in totalst track by obj.properties.STATION_NAME_EN  "></select>  </label>
+
+               <label class="item item-input item-select">
+
+               <div class="input-label"> Card Type </div>
+               <select ng-model="user.cardType">
+                <option value="SILVER">Silver</option>
+                <option value="GOLD">Gold</option>
+  
+                </select> </label>
+
+                <a class="item item-avatar">
+                    <img src="http://travel.fyicenter.com/Currency/AED_5_Five_Dirham_Bill_Front.jpg">
+                    <h2 ng-repeat="league in tramFare track by $index">{{league.Fare}} AED</h2>
+                    
+                     <p ng-repeat="league in tramFare track by $index">{{league.message.text}} </p>
+                </a>
+
+                <button class="button button-block button-calm ink" data-ink-color="#9DEAFF" data-ink-opacity="1" ng-click="tram(user)" value="Save"> Submit </button> 
+              </div>
+
+              
+
+
+              </div>
+
+              <div class="list animate-fade-slide-in"> 
+          <!--<label class="item item-input item-floating-label"> 
+            <span class="input-label">First Name</span> 
+            <input type="text" placeholder="First Name"> 
+          </label> <label class="item item-input item-floating-label">
+           <span class="input-label">Last Name</span>
+            <input type="text" placeholder="Last Name"> </label> <br /> 
+
+            <div class="item item-checkbox"> <label class="checkbox"> <input type="checkbox"> </label> I read the terms & conditions </div> 
+
+            <div class="item item-checkbox"> <label class="checkbox">
+             <input type="checkbox"> </label> Haha, you liar. There are no T&C's </div> 
+
+             <br /> <label class="item item-radio"> <input type="radio" name="group">
+
+              <div class="item-content"> Tap Me </div> 
+
+              <i class="radio-icon ion-checkmark"></i> </label> <label class="item item-radio"> <input type="radio" name="group">
+
+               <div class="item-content"> Or Tap Me </div> <i class="radio-icon ion-checkmark"></i> </label> <label class="item item-radio"> <input type="radio" name="group"> <div class="item-content"> Or Tap Me </div> 
+
+              <i class="radio-icon ion-checkmark"></i> </label> <div class="item range range-positive"> <i class="icon ion-ios-sunny-outline"></i> <input type="range" name="volume" min="0" max="100" value="33"> <i class="icon ion-ios-sunny"></i> </div>-->
+              <div class="list card stable-bg" ng-init="busStations()">
+                <h3 align="center"> Bus Fare Calculator </h3>
+               <label class="item item-input item-select">
+
+               <div class="input-label"> Source Station </div> <select 
+               ng-model="busNames" class="form-control" ng-options="obj.properties.STOPS_NAME_EN for obj in busSt track by obj.properties.STOPS_NAME_EN "></select> 
+             </label>
+
+               <label class="item item-input item-select">
+
+               <div class="input-label"> Destination </div> <select 
+               ng-model="busdest" class="form-control" ng-options="obj.properties.STOPS_NAME_EN for obj in busSt track by obj.properties.STOPS_NAME_EN "></select>  </label>
+
+               <label class="item item-input item-select">
+
+               <div class="input-label"> Card Type </div>
+               <select ng-model="user.cardType">
+                <option value="SILVER">Silver</option>
+                <option value="GOLD">Gold</option>
+  
+                </select> </label>
+
+                <a class="item item-avatar">
+                    <img src="http://travel.fyicenter.com/Currency/AED_5_Five_Dirham_Bill_Front.jpg">
+                    <h2 ng-repeat="league in busFare track by $index">Total Fare {{league.Fare}} AED</h2>
+                     <p ng-repeat="league in busFare track by $index">{{league.message.text}} </p>
+                    
+                </a>
+
+                <button class="button button-block button-calm ink" data-ink-color="#9DEAFF" data-ink-opacity="1" ng-click="bus(user)" value="Save"> Submit </button> 
+              </div>
+
+              
+
+              </div>
+                
+                
+</div>
+</div>
+  </ion-content>
+</ion-view>

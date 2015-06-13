@@ -1,0 +1,28 @@
+<!--
+  This template loads for the 'tab.friend-detail' state (app.js)
+  'friend' is a $scope variable created in the FriendsCtrl controller (controllers.js)
+  The FriendsCtrl pulls data from the Friends service (service.js)
+  The Friends service returns an array of friend data
+-->
+<ion-view >
+  <ion-content class="has-header" >
+   
+
+     
+
+   
+
+     <google-map
+    center="centerProperty"
+    zoom="zoomProperty" 
+    markers="markersProperty"
+    latitude="clickedLatitudeProperty"
+    longitude="clickedLongitudeProperty"
+    mark-click="true"
+    draggable="true"
+    style="height: 450px; width: 100%">
+  </google-map>
+  
+</google-map>
+  </ion-content>
+</ion-view>

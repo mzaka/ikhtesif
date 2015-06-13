@@ -1,0 +1,17 @@
+<ion-view title="Gyms">
+  <ion-content class="padding" >
+
+ <div class="list" ng-repeat="gyms in Resultgym">
+ <a class="item item-avatar"> 
+ <img src="{{gyms.icon}}">
+ <h2>{{gyms.name}}</h2> 
+ <p>{{gyms.vicinity}}</p>
+ <i class="ion-map" ui-sref="app.location-map"> View Map </i>
+ </a>
+ 
+  </div>
+
+                
+  
+  </ion-content>
+</ion-view>

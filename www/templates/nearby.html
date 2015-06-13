@@ -1,0 +1,73 @@
+<ion-view view-title="Search" name="flight">
+  <ion-content class="padding">
+    <ion-list>
+
+<div >
+<div class="item-input-inset">
+                <label class="item-input-wrapper">
+                    <i class="icon ion-search placeholder-icon"></i>
+                    <input id="searchTerm" style="width: 100%" type="search" placeholder="Search Term"/>
+                                   </label>
+                <button class="button button-clear" ng-click="data.search = ''">
+                    Cancel
+                </button>
+            </div>
+
+          
+            
+
+ 
+
+
+
+     
+ <button class="button button-light" ng-click="SearchResults()">
+  Search
+</button>
+
+
+<div class="item">
+
+ <b><p>{{SearchResult_api[0].name}}</p></b>
+
+</div>
+
+<div class="item">
+  <p> Nearest Metro Station</p>
+ <b><p>{{destinationMetro}}</p></b>
+
+  <p><span>Distance To Metro Station : </span><b>{{destinationMetroDistance}}</b></p>
+
+</div>
+
+
+
+<div class="item">
+  <p> Nearest Metro Station To You</p>
+ <p>{{SourceMetro}}</p>
+
+  <p><span>Distance To Metro Station : </span><b>{{SourceMetroDistance}}</b></p>
+
+</div>
+
+
+
+<div class="item">
+  <p> Details of Transportation </p>
+ 
+
+  <p><span> Approximated Cost : </span><b>{{Fare_amount}}</b></p>
+ <p><span> Message : </span><b>{{messageTxt.text}}</b></p>
+</div>
+
+</div>
+
+
+
+
+
+
+
+  </ion-list>
+  </ion-content>
+</ion-view>
