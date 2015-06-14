@@ -164,7 +164,7 @@ function onPlaceChanged() {
   
   navigator.geolocation.getCurrentPosition(function(position) {
        
-     $http.get('https://maps.googleapis.com/maps/api/place/nearbysearch/json?location='+position.coords.latitude+','+position.coords.longitude+'&radius=4000&types='+$scope.hospitalSel+'&key=AIzaSyD0of8qFHGkUH_QL1h2F80sUFF4EggwW1E').then(function(resp) {
+     $http.get('https://maps.googleapis.com/maps/api/place/nearbysearch/json?location='+position.coords.latitude+','+position.coords.longitude+'&radius=4000&types='+$scope.hospitalSel+'&key=').then(function(resp) {
     console.log('Success', resp);
   $scope.Result = resp.data.results;
   console.log($scope.Result)
@@ -187,7 +187,7 @@ function onPlaceChanged() {
   
   navigator.geolocation.getCurrentPosition(function(position) {
        
-     $http.get('https://maps.googleapis.com/maps/api/place/nearbysearch/json?location='+position.coords.latitude+','+position.coords.longitude+'&radius=4000&types='+$scope.uniSel+'&key=AIzaSyD0of8qFHGkUH_QL1h2F80sUFF4EggwW1E').then(function(resp) {
+     $http.get('https://maps.googleapis.com/maps/api/place/nearbysearch/json?location='+position.coords.latitude+','+position.coords.longitude+'&radius=4000&types='+$scope.uniSel+'&key=').then(function(resp) {
     console.log('Success', resp);
   $scope.Resultuni = resp.data.results;
   console.log($scope.Resultuni)
@@ -210,7 +210,7 @@ function onPlaceChanged() {
   
   navigator.geolocation.getCurrentPosition(function(position) {
        
-     $http.get('https://maps.googleapis.com/maps/api/place/nearbysearch/json?location='+position.coords.latitude+','+position.coords.longitude+'&radius=4000&types='+$scope.gymSel+'&key=AIzaSyD0of8qFHGkUH_QL1h2F80sUFF4EggwW1E').then(function(resp) {
+     $http.get('https://maps.googleapis.com/maps/api/place/nearbysearch/json?location='+position.coords.latitude+','+position.coords.longitude+'&radius=4000&types='+$scope.gymSel+'&key=').then(function(resp) {
     console.log('Success', resp);
   $scope.Resultgym = resp.data.results;
   console.log($scope.Resultgym)
@@ -233,7 +233,7 @@ function onPlaceChanged() {
   
   navigator.geolocation.getCurrentPosition(function(position) {
        
-     $http.get('https://maps.googleapis.com/maps/api/place/nearbysearch/json?location='+position.coords.latitude+','+position.coords.longitude+'&radius=4000&types='+$scope.restSel+'&key=AIzaSyD0of8qFHGkUH_QL1h2F80sUFF4EggwW1E').then(function(resp) {
+     $http.get('https://maps.googleapis.com/maps/api/place/nearbysearch/json?location='+position.coords.latitude+','+position.coords.longitude+'&radius=4000&types='+$scope.restSel+'&key=').then(function(resp) {
     console.log('Success', resp);
   $scope.Resultrest = resp.data.results;
   console.log($scope.Resultrest)
@@ -296,7 +296,7 @@ $scope.SearchResults = function(placeToSearch)
 
    
 
- $http.get('https://maps.googleapis.com/maps/api/place/nearbysearch/json?location='+$scope.SearchResult_api[0].geometry.location.lat+','+$scope.SearchResult_api[0].geometry.location.lng+'&radius=1500&types=train_station&key=AIzaSyD0of8qFHGkUH_QL1h2F80sUFF4EggwW1E').then(function(dest_resp) {
+ $http.get('https://maps.googleapis.com/maps/api/place/nearbysearch/json?location='+$scope.SearchResult_api[0].geometry.location.lat+','+$scope.SearchResult_api[0].geometry.location.lng+'&radius=1500&types=train_station&key=').then(function(dest_resp) {
     console.log('Success', dest_resp);
  
    
@@ -347,7 +347,7 @@ $scope.CalculateMetroDistance();
 navigator.geolocation.getCurrentPosition(function(position) {
        
        // metro stations
-     $http.get('https://maps.googleapis.com/maps/api/place/nearbysearch/json?location='+position.coords.latitude+','+position.coords.longitude+'&radius=1500&types=train_station&key=AIzaSyD0of8qFHGkUH_QL1h2F80sUFF4EggwW1E').then(function(resp) {
+     $http.get('https://maps.googleapis.com/maps/api/place/nearbysearch/json?location='+position.coords.latitude+','+position.coords.longitude+'&radius=1500&types=train_station&key=').then(function(resp) {
     console.log('Success', resp);
   $scope.Result = resp.data.results;
    
@@ -415,7 +415,7 @@ $scope.CalculateMetroFare();
   
 
             };
-        var res = $http.post('https://api.apim.ibmcloud.com/rta/sb/fare/metro?client_id=fef6cc65-e843-455f-b44f-0bba3b0c002f&client_secret=yL0mK7yQ0uU1fN4lQ2iL5wU1yP3bW6uA7uU5eP5jQ5pO8wO7tY',msgdata);
+        var res = $http.post('https://api.apim.ibmcloud.com/rta/sb/fare/metro?client_id=fef6cc65-e843-455f-b44f-0bba3b0c002f&client_secret=',msgdata);
         res.success(function(data, status, headers, config) {
           console.log(data);
 

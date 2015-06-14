@@ -26,7 +26,7 @@
                 var vm = this;
                 var req = {
                 method: 'GET',
-                url: 'https://api.apim.ibmcloud.com/rta/sb/tramstations/all?client_id=fef6cc65-e843-455f-b44f-0bba3b0c002f&client_secret=yL0mK7yQ0uU1fN4lQ2iL5wU1yP3bW6uA7uU5eP5jQ5pO8wO7tY',
+                url: 'https://api.apim.ibmcloud.com/rta/sb/tramstations/all?client_id=fef6cc65-e843-455f-b44f-0bba3b0c002f&client_secret=',
                 headers: {
                 'Content-Type': 'application/json'
                 },
@@ -88,7 +88,7 @@
                 var vm = this;
                 var req = {
                 method: 'GET',
-                url: 'https://api.apim.ibmcloud.com/rta/sb/busstations/all?client_id=fef6cc65-e843-455f-b44f-0bba3b0c002f&client_secret=yL0mK7yQ0uU1fN4lQ2iL5wU1yP3bW6uA7uU5eP5jQ5pO8wO7tY',
+                url: 'https://api.apim.ibmcloud.com/rta/sb/busstations/all?client_id=fef6cc65-e843-455f-b44f-0bba3b0c002f&client_secret=',
                 headers: {
                 'Content-Type': 'application/json'
                 },
@@ -143,7 +143,7 @@
                 var vm = this;
                 var req = {
                 method: 'GET',
-                url: 'https://api.apim.ibmcloud.com/rta/sb/metrostations/all?client_id=fef6cc65-e843-455f-b44f-0bba3b0c002f&client_secret=yL0mK7yQ0uU1fN4lQ2iL5wU1yP3bW6uA7uU5eP5jQ5pO8wO7tY',
+                url: 'https://api.apim.ibmcloud.com/rta/sb/metrostations/all?client_id=fef6cc65-e843-455f-b44f-0bba3b0c002f&client_secret=',
                 headers: {
                 'Content-Type': 'application/json'
                 },
@@ -203,7 +203,7 @@
                 var vm = this;
                 var req = {
                 method: 'POST',
-                url: 'https://api.apim.ibmcloud.com/rta/sb/fare/tram?client_id=fef6cc65-e843-455f-b44f-0bba3b0c002f&client_secret=yL0mK7yQ0uU1fN4lQ2iL5wU1yP3bW6uA7uU5eP5jQ5pO8wO7tY',
+                url: 'https://api.apim.ibmcloud.com/rta/sb/fare/tram?client_id=fef6cc65-e843-455f-b44f-0bba3b0c002f&client_secret=',
                 headers: {
                 'Content-Type': 'application/json'
                 },
@@ -265,7 +265,7 @@
                 var vm = this;
                 var req = {
                 method: 'POST',
-                url: 'https://api.apim.ibmcloud.com/rta/sb/fare/bus?client_id=fef6cc65-e843-455f-b44f-0bba3b0c002f&client_secret=yL0mK7yQ0uU1fN4lQ2iL5wU1yP3bW6uA7uU5eP5jQ5pO8wO7tY',
+                url: 'https://api.apim.ibmcloud.com/rta/sb/fare/bus?client_id=fef6cc65-e843-455f-b44f-0bba3b0c002f&client_secret=',
                 headers: {
                 'Content-Type': 'application/json'
                 },
@@ -319,7 +319,7 @@
                 var vm = this;
                 var req = {
                 method: 'POST',
-                url: 'https://api.apim.ibmcloud.com/rta/sb/fare/metro?client_id=fef6cc65-e843-455f-b44f-0bba3b0c002f&client_secret=yL0mK7yQ0uU1fN4lQ2iL5wU1yP3bW6uA7uU5eP5jQ5pO8wO7tY',
+                url: 'https://api.apim.ibmcloud.com/rta/sb/fare/metro?client_id=fef6cc65-e843-455f-b44f-0bba3b0c002f&client_secret=',
                 headers: {
                 'Content-Type': 'application/json'
                 },
@@ -367,7 +367,7 @@
             } else {
                 var req = {
                 method: 'POST',
-                url: 'https://api.apim.ibmcloud.com/rta/sb/gisdata/bustimetable?client_id=fef6cc65-e843-455f-b44f-0bba3b0c002f&client_secret=yL0mK7yQ0uU1fN4lQ2iL5wU1yP3bW6uA7uU5eP5jQ5pO8wO7tY',
+                url: 'https://api.apim.ibmcloud.com/rta/sb/gisdata/bustimetable?client_id=fef6cc65-e843-455f-b44f-0bba3b0c002f&client_secret=',
                 headers: {
                 'Content-Type': 'application/json'
                 },
